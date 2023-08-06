@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background: url(../public/red.jpg);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.pesan{
+    margin-top: 10%;
+}
+
+/* Gaya default untuk toggle */
+#toggle {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Ganti lebar sesuai kebutuhan Anda */
+    height: 20px; /* Ganti tinggi sesuai kebutuhan Anda */
+    background-color: #ccc; /* Warna latar belakang default saat unchecked, hitam */
+    border-radius: 10px; /* Sesuaikan setengah dari tinggi untuk mendapatkan bentuk bulat yang tepat */
+  }
+  
+  #toggle input {
+    display: none;
+  }
+  
+  /* Gaya untuk slider toggle */
+  #toogle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; /* Warna latar belakang default saat checked, putih */
+    border-radius: 10px; /* Sesuaikan setengah dari tinggi untuk mendapatkan bentuk bulat yang tepat */
+    transition: .4s;
+  }
+  
+  /* Efek saat tombol dicentang */
+  #toggle input:checked + .slider {
+    background-color: #000; /* Warna latar belakang saat checked, hitam */
+  }
+  
+  /* Gaya bola penanda (thumb) pada toggle */
+  #toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Ganti tinggi sesuai kebutuhan Anda */
+    width: 16px; /* Ganti lebar sesuai kebutuhan Anda */
+    left: 2px;
+    bottom: 2px;
+    background-color: #f1f1f1ff; /* Warna bola penanda default saat unchecked, putih */
+    border-radius: 50%;
+    transition: .4s;
+  }
+  
+  /* Efek saat tombol dicentang (menyentuh bola penanda) */
+  #toggle input:checked + .slider:before {
+    transform: translateX(20px); /* Menggeser bola penanda ke kanan saat checked */
+    /* background-color: #000; Warna bola penanda saat checked, hitam */
+  }
+  
