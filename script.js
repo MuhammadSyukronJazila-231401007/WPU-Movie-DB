@@ -11,7 +11,7 @@ $('.input-keyword').on('keypress', function(event){
 
 function inputHandler(){
     $.ajax({
-        url:`http://www.omdbapi.com/?apikey=27977494&s=${$('.input-keyword').val()}`,
+        url:`https://www.omdbapi.com/?apikey=27977494&s=${$('.input-keyword').val()}`,
         success:result => {
             const movies = result.Search
             let cards = ''
@@ -29,7 +29,7 @@ function inputHandler(){
         //ketika tombol detail diklil
         $('.modal-detail-button').on('click', function(){
             $.ajax({
-                url:`http://www.omdbapi.com/?apikey=27977494&i=${$(this).data('imdbid')}`,
+                url:`https://www.omdbapi.com/?apikey=27977494&i=${$(this).data('imdbid')}`,
                 success:m => {
                     const movieDetail = showMovieDetail(m)
 
