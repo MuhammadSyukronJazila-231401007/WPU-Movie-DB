@@ -1,4 +1,4 @@
-// tes gk sih
+// hanya tes
 $('.search-button').on('click', function(){
     inputHandler()
 })
