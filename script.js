@@ -1,4 +1,4 @@
-// hanya tes
+// tes gitHub brach from WPU
 $('.search-button').on('click', function(){
     inputHandler()
 })
