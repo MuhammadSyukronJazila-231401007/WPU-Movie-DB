@@ -4,6 +4,7 @@ searchButton.addEventListener('click', async function(){
     const movies = await getMovies(inputKeyWord)
     updateUI(movies)
 
+
 })
 
 const inputKeyWord = document.querySelector('.input-keyword')
